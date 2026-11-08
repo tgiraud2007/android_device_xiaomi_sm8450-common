@@ -77,6 +77,13 @@ BOARD_KERNEL_CMDLINE := \
     log_buf_len=1M \
     printk.devkmsg=on \
     scsi_mod.scan=sync
+
+# DEBUG (ukee bring-up only, never merge): send every printk level to the
+# pstore console that minidump saves as KCONSOLE, and log every initcall,
+# including module init functions, so a hang names the last driver.
+BOARD_KERNEL_CMDLINE += \
+    ignore_loglevel \
+    initcall_debug
 BOARD_BOOTCONFIG := \
     androidboot.hardware=qcom \
     androidboot.load_modules_parallel=performance \
