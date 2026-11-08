@@ -58,8 +58,9 @@ echo 0-3 > /dev/cpuset/system-background/cpus
 # Turn off scheduler boost at the end
 echo 0 > /proc/sys/walt/sched_boost
 
-# Reset the RT boost, which is 1024 (max) by default.
-echo 0 > /proc/sys/kernel/sched_util_clamp_min_rt_default
+# Reset the RT boost, which is 1024 (max) by default, to 128 so that
+# RT tasks (SurfaceFlinger, touch IRQ threads) still ramp the CPU up.
+echo 128 > /proc/sys/kernel/sched_util_clamp_min_rt_default
 
 # configure governor settings for silver cluster
 echo "walt" > /sys/devices/system/cpu/cpufreq/policy0/scaling_governor
