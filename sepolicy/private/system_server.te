@@ -1,4 +1,0 @@
-# PixelOS AttestationService (system_server) builds its URL from
-# net.pixelos.version and honours persist.sys.pihooks.disable.*
-get_prop(system_server, custom_version_prop)
-get_prop(system_server, pih_disable_prop)
