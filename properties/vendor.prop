@@ -210,3 +210,7 @@ vendor.usb.use_gadget_hal=1
 
 # WiFi
 wifi.aware.interface=wifi-aware0
+
+# Logging
+persist.log.tag.QC2Buf=W
+persist.log.tag.QC2V4l2Codec=E
