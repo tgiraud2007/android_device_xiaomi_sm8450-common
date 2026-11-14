@@ -307,7 +307,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     FrameworksResTarget \
     FrameworksResXiaomi \
-    LineageResXiaomi \
     SettingsProviderResXiaomi \
     SettingsResXiaomi
 
