@@ -1,0 +1,2 @@
+# Torch strength control (camera provider extension)
+allow cameraserver sysfs_torch:file rw_file_perms;
