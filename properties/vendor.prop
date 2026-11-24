@@ -119,7 +119,9 @@ vendor.gatekeeper.disable_spu=true
 graphics.gpu.profiler.support=true
 debug.egl.hw=0
 debug.graphics.game_default_frame_rate.disabled=true
+debug.hwui.use_hint_manager=true
 debug.sf.disable_client_composition_cache=0
+debug.sf.enable_adpf_cpu_hint=true
 debug.sf.enable_advanced_sf_phase_offset=1
 debug.sf.enable_gl_backpressure=1
 debug.sf.enable_hwc_vds=1
@@ -152,6 +154,7 @@ ro.surface_flinger.use_color_management=true
 ro.surface_flinger.use_content_detection_for_refresh_rate=true
 ro.surface_flinger.wcg_composition_dataspace=143261696
 vendor.gralloc.disable_ubwc=0
+vendor.perf.expensive_rendering=1
 
 # Incremental
 ro.incremental.enable=yes
