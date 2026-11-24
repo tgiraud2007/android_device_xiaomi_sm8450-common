@@ -191,4 +191,7 @@
 
     <!-- Whether to select voice/data/sms preference without user confirmation -->
     <bool name="config_voice_data_sms_auto_fallback">true</bool>
+
+    <!-- Report OverScroller flings to the flingboost service -->
+    <bool name="config_flingBoost">true</bool>
 </resources>

@@ -1,0 +1,12 @@
+type flingboost, domain, coredomain;
+type flingboost_exec, system_file_type, exec_type, file_type;
+
+init_daemon_domain(flingboost)
+
+binder_use(flingboost)
+add_service(flingboost, flingboost_service)
+hal_client_domain(flingboost, hal_power)
+
+binder_call(appdomain, flingboost)
+binder_call(system_server, flingboost)
+allow system_server flingboost_service:service_manager find;

@@ -1,0 +1,4 @@
+service flingboost /system_ext/bin/flingboost
+    class late_start
+    user system
+    group system
